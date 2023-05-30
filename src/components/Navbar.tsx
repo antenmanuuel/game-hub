@@ -7,7 +7,7 @@ interface Props {
   onSearch: (searchText: string) => void;
 }
 
-export const Navbar = ({ onSearch }: Props) => {
+const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack padding="10px">
       <Image src={logo} boxSize="60px" />
@@ -16,3 +16,5 @@ export const Navbar = ({ onSearch }: Props) => {
     </HStack>
   );
 };
+
+export default NavBar;
